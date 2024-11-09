@@ -14,6 +14,21 @@ left: 0;
 color: black;
 }
 
+.scaleImg1{
+      width: 100%;
+      max-width: max-content;
+height:100%;
+    }
+
+grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item {
+ height: 200
+}
+
+
 h1 {
   color: white;
 }
@@ -41,17 +56,10 @@ h2 {
 text-align: center;
   background-color: black;
   color: green;
-  font-size: 50px;
-padding: 60px 0px 60px 0px;
+  font-size: 35px;
+padding: 40px 0px 40px 0px;
 }
 
-img {
-    height: auto;
-    max-height: 100%;
-
-    width: auto;
-    max-width: 100%;
-}
 
 </style>
 <img class="logo" src="images\logo.png" alt="logo">
@@ -60,16 +68,30 @@ img {
 <body>
 
 <ul>
-  <li><a>Shop</a></li>
-  <li><a>Photo Gallery</a></li>
-  <li><a>Astrology</a></li>
-  <li><a>The Cards</a></li>
-  <li><a>Home</a></li>
+  <li><a style="text-decoration:none" href="shop.html">Shop</a></li>
+    <li><a style="text-decoration:none" href="gallery.html">Photo Gallery</a></li>
+  <li><a style="text-decoration:none" href="astrology.html">Astrology</a></li>
+  <li><a style="text-decoration:none" href="TheCards.html">The Cards</a></li>
+  <li><a style="text-decoration:none" href="index.html">Home</a></li>
 </ul>
 
  <h2>Learn the ancient wisdom of astrology while you <br>play any of your favorite card games with Sun Cards.</h1>
 
-<img src="images/CardsImage1.jpg" >
+<img src="images/cardsImage1.jpg" class="scaleImg1" />
+
+
+
+<div class="grid-container">
+ <div class="grid-item"> <h2>How can learning astrology help me 
+in my life?</h2>   </div>
+ <div class="grid-item"><img src="https://private-user-images.githubusercontent.com/187688535/384585635-33d308c4-137c-400a-9680-60d1d7070dec.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzExMzk1NzQsIm5iZiI6MTczMTEzOTI3NCwicGF0aCI6Ii8xODc2ODg1MzUvMzg0NTg1NjM1LTMzZDMwOGM0LTEzN2MtNDAwYS05NjgwLTYwZDFkNzA3MGRlYy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTEwOVQwODAxMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hOWZmMTA3NDhhNzdiNzYwMjJmZTQ5OWY1ODEwNTA5ZjFhM2FkMTA0ZjY3OWUzNGYyOGJlMzkwNmVjOTRhYTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HisIy1aS9Vh_4Up_QA8Q93zjTQU_Ph-ieXtQhSJ6T8Y></div>
+ <div class="grid-item">test3</div>
+ <div class="grid-item">test4</div>
+ <div class="grid-item">test5</div>
+ <div class="grid-item">test6</div>
+ <div class="grid-item">test7</div>
+ <div class="grid-item">test8</div>
+</div>
 
 </body>
 </html>
