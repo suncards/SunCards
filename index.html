@@ -5,28 +5,20 @@
 <head>
 <style>
 
-      body {
-   transform: scale(1.1);
-   transform-origin: 0 0;
-        background-color: black;
 
-      }
-  
-%logo {
-width: 250px;
-height: 250px;
-top: 0;
-left: 0;
-color: black;
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
-.scaleImg1{
-      width: 100%;
-    }
 
-.scaleCard{
-      width: 5%;
-    }
+.wrap {
+
+    overflow: hidden;
+}
 
  a:hover {color: red;}
     a { color: black; text-decoration: none;}
@@ -46,6 +38,7 @@ ul {
 
 li {
   float: right;
+  display:flex;
 
 }
 
@@ -81,13 +74,15 @@ color:#00A5CF;
   <li><a href="gallery.html">Photo Gallery</a></li>
   <li><a href="astrology.html">Astrology</a></li>
   <li><a href="TheCards.html">The Cards</a></li> 
-  <li style={float:left;}  ><a href="index.html"><img width="20%" src="images\logo.png" style={border:none;float:left;} alt=""></a></li>
+  <li><a class="logo" href="index.html"><img width="20%" src="images\logo.png" style={border:none;float:left;} alt=""></a></li>
 </ul>
 
 
  <h1>Learn the ancient wisdom of astrology while you <br>play any of your favorite card games with Sun Cards.</h1>
 
-<img src="images/cardsImage1.jpg" class="scaleImg1" />
+<div class="wrap">
+<img   style="width:100%"  src="images/cardsImage1.jpg" />
+</div>
 
 <div>
 <table  width="auto"  cellpadding="30"  bgcolor="black">
@@ -97,7 +92,7 @@ color:#00A5CF;
 	</tr>
 	<tr>
 		 <td ><h2>How can learning astrology help me in my life?</h2>
-			<p style="" style="color:#00A5CF;">Astrology is the ancient puzzle that gives us insights into 
+			<p style="color:#00A5CF;">Astrology is the ancient puzzle that gives us insights into 
 				our own attributes and challenges and helps us find our 
 				‘place’ in the world. All of the signs of the Zodiac 
 				complement and strengthen each other. We are all 
