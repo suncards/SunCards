@@ -1,49 +1,45 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
 <style>
-      body {
-        background-color: black;
-      }
-  
-.logo {
-width: 250px;
-height: 250px;
-top: 0;
-left: 0;
-color: black;
+
+
+
+
+.wrap {
+padding: 40px 0px 40px 0px;
+    overflow: hidden;
 }
 
-.scaleImg1{
-      width: 100%;
-      max-width: max-content;
-height:100%;
-    }
+ a:hover {color: red;}
+    a { color: black; text-decoration: none;}
 
-h1 {
-  color: white;
-}
+ a:active {color: red;}
+    a { color: yellow; text-decoration: none;}
+
+
 
 ul {
-  list-style-type: none;
-  margin: 0;
   padding: 20;
   overflow: hidden;
   background-color: black;
 }
 
 li {
-  float: right;
+  float: left;
+
 }
 
 li a {
-
-  padding: 10px;
-  color: yellow;
-    font-size: 20px;
-
+padding: 15px;
+    color: yellow;    
+    text-decoration: none;   
+	  font-size: 20px;
+    font-family: sans-serif;
 }
-h2 {
+h1 {
 text-align: center;
   background-color: black;
   color: green;
@@ -51,24 +47,59 @@ text-align: center;
 padding: 40px 0px 40px 0px;
 }
 
+h2 {
+text-align: left;
+color:#00A5CF;
+  font-size: 35px;
+}
 
 </style>
-<img class="logo" src="images\logo.png" alt="logo">
+
 </head>
 
-<body>
-
+<body style="background-color:black;">
 <ul>
-  <li><a style="text-decoration:none" href="shop.html">Shop</a></li>
-    <li><a style="text-decoration:none" href="gallery.html">Photo Gallery</a></li>
-  <li><a style="text-decoration:none" href="astrology.html">Astrology</a></li>
-  <li><a style="text-decoration:none" href="TheCards.html">The Cards</a></li>
-  <li><a style="text-decoration:none" href="index.html">Home</a></li>
+ <li><a  href="index.html"><img width="50%" src="images\logo.png"  alt=""></a></li>
+  <li><a href="TheCards.html">The Cards</a></li>  
+    <li><a href="astrology.html">Astrology</a></li>
+	  <li><a href="gallery.html">Photo Gallery</a></li>
+	    <li> </li>
+  <li ><a href="shop.html">Shop</a></li>
 </ul>
 
+<div>
+<h2 style="color:red">A deck of cards = A solar calendar</h2>
+			<p style="color:red;">The four suits represent the four seasons of the year. 
+				The 52 weeks of our year correlate with the 52 cards in 
+				a deck. Each card (except for the Jokers – we will talk 
+				more about them later!) represent a week of the year 
+				and every pip on each card represents a day of the 
+				week.</p>
+</div>
 
- <h2>The Cards</h1>
+<div>
+<img   style="width:100%"  src="images/The_cards_top@2x.png" />
+</div>
 
 
+<div>
+<table  width="100%"  cellpadding="30"  bgcolor="black">
+	<tr>
+        <td>
+			<img   style="width:100%" src="images/Theccards-spring.png" />		
+		</td>
+        <td>
+			<img style="width:100%" src="images/Thecards-summer.png" />		
+		</td>
+		<td>
+			<img style="width:100%" src="images/Thecards-fall.png" />		
+		</td>
+		<td>
+			<img style="width:100%" src="images/Thecards_winter.png" />		
+		</td>
+	</tr>
+</table>
+
+</div>
 </body>
 </html>
