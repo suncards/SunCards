@@ -1,12 +1,18 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
 <style>
+
       body {
+   transform: scale(1.1);
+   transform-origin: 0 0;
         background-color: black;
+
       }
   
-.logo {
+%logo {
 width: 250px;
 height: 250px;
 top: 0;
@@ -16,43 +22,41 @@ color: black;
 
 .scaleImg1{
       width: 100%;
-      max-width: max-content;
-height:100%;
     }
 
-grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.grid-item {
- height: 200
-}
+.scaleCard{
+      width: 5%;
+    }
+
+ a:hover {color: red;}
+    a { color: black; text-decoration: none;}
+
+ a:active {color: red;}
+    a { color: yellow; text-decoration: none;}
 
 
-h1 {
-  color: white;
-}
 
 ul {
   list-style-type: none;
-  margin: 0;
   padding: 20;
   overflow: hidden;
   background-color: black;
+
 }
 
 li {
   float: right;
+
 }
 
 li a {
-
-  padding: 10px;
-  color: yellow;
-    font-size: 20px;
-
+padding: 15px;
+    color: yellow;    
+    text-decoration: none;   
+	  font-size: 20px;
+    font-family: sans-serif;
 }
-h2 {
+h1 {
 text-align: center;
   background-color: black;
   color: green;
@@ -60,38 +64,91 @@ text-align: center;
 padding: 40px 0px 40px 0px;
 }
 
+h2 {
+text-align: left;
+color:#00A5CF;
+  font-size: 35px;
+}
 
 </style>
-<img class="logo" src="images\logo.png" alt="logo">
+
 </head>
 
 <body>
 
 <ul>
-  <li><a style="text-decoration:none" href="shop.html">Shop</a></li>
-    <li><a style="text-decoration:none" href="gallery.html">Photo Gallery</a></li>
-  <li><a style="text-decoration:none" href="astrology.html">Astrology</a></li>
-  <li><a style="text-decoration:none" href="TheCards.html">The Cards</a></li>
-  <li><a style="text-decoration:none" href="index.html">Home</a></li>
+  <li ><a href="shop.html">Shop</a></li>
+  <li><a href="gallery.html">Photo Gallery</a></li>
+  <li><a href="astrology.html">Astrology</a></li>
+  <li><a href="TheCards.html">The Cards</a></li> 
+  <li style={float:left;}  ><a href="index.html"><img width="20%" src="images\logo.png" style={border:none;float:left;} alt=""></a></li>
 </ul>
 
- <h2>Learn the ancient wisdom of astrology while you <br>play any of your favorite card games with Sun Cards.</h1>
+
+ <h1>Learn the ancient wisdom of astrology while you <br>play any of your favorite card games with Sun Cards.</h1>
 
 <img src="images/cardsImage1.jpg" class="scaleImg1" />
 
+<div>
+<table  width="auto"  cellpadding="30"  bgcolor="black">
+    <tr  >
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		 <td ><h2>How can learning astrology help me in my life?</h2>
+			<p style="" style="color:#00A5CF;">Astrology is the ancient puzzle that gives us insights into 
+				our own attributes and challenges and helps us find our 
+				‘place’ in the world. All of the signs of the Zodiac 
+				complement and strengthen each other. We are all 
+				stronger as part of a team! <a href="astrology.html">Read more</a></p>
+		</td>
+        <td>
+			<img class="center"  style="width:100%" src="images/Home_card1_30.png" />		
+		</td>
+	</tr>
+	
+	    <tr>
+		<th>
+			<td ></td>
+			<td ></td>
+		</th>
+	</tr>
+	<tr>
+		 <td ><h2 style="color:red">A deck of cards = A solar calendar</h2>
+			<p style="color:red;">The four suits represent the four seasons of the year. 
+				The 52 weeks of our year correlate with the 52 cards in 
+				a deck. Each card (except for the Jokers – we will talk 
+				more about them later!) represent a week of the year 
+				and every pip on each card represents a day of the 
+				week. <a href="TheCards.html">Tell me more!</a> </p>
+		</td>
+        <td>
+			<img style="width:100%" src="images/Home_card2_20.png" />		
+		</td>
+	</tr>
+	
+	    <tr>
+		<th>
+			<td ></td>
+			<td ></td>
+		</th>
+	</tr>
+	<tr>
+		 <td ><h2 style="color:green;">The solar calendar links you to your unique astrology</h2>
+			<p style="color:green;">Every card in the deck also has a Zodiac sign associated 
+			with it. It is a misconception that you get your Zodiac 
+			sign from constellations of stars. Your sign is derived 
+			from the seasons of the year. People born at different 
+			times of the year have different strengths, personalities, 
+			and life purposes. <a href="astrology.html">Read More!</a></a></p>
+		</td>
+        <td>
+			<img style="width:100%" src="images/Home_card3_30.png" />		
+		</td>
+	</tr>
 
-
-<div class="grid-container">
- <div class="grid-item"> <h2>How can learning astrology help me 
-in my life?</h2>   </div>
- <div class="grid-item"><img src="https://private-user-images.githubusercontent.com/187688535/384585635-33d308c4-137c-400a-9680-60d1d7070dec.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzExMzk1NzQsIm5iZiI6MTczMTEzOTI3NCwicGF0aCI6Ii8xODc2ODg1MzUvMzg0NTg1NjM1LTMzZDMwOGM0LTEzN2MtNDAwYS05NjgwLTYwZDFkNzA3MGRlYy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTEwOVQwODAxMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hOWZmMTA3NDhhNzdiNzYwMjJmZTQ5OWY1ODEwNTA5ZjFhM2FkMTA0ZjY3OWUzNGYyOGJlMzkwNmVjOTRhYTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HisIy1aS9Vh_4Up_QA8Q93zjTQU_Ph-ieXtQhSJ6T8Y></div>
- <div class="grid-item">test3</div>
- <div class="grid-item">test4</div>
- <div class="grid-item">test5</div>
- <div class="grid-item">test6</div>
- <div class="grid-item">test7</div>
- <div class="grid-item">test8</div>
+</table>
 </div>
-
 </body>
 </html>
