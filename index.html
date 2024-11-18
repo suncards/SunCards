@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 <style>
 
-
-
-
-.wrap {
-padding: 40px 0px 40px 0px;
-    overflow: hidden;
-}
-
- a:hover {color: red;}
-    a { color: black; text-decoration: none;}
-
- a:active {color: red;}
-    a { color: yellow; text-decoration: none;}
-
-
-
 ul {
-  padding: 20;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color: black;
 }
 
 li {
-  float: left;
-
+  float: right;
 }
 
 li a {
-padding: 15px;
-    color: yellow;    
-    text-decoration: none;   
-	  font-size: 20px;
-    font-family: sans-serif;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
 }
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+	
 h1 {
 text-align: center;
   background-color: black;
@@ -54,21 +48,22 @@ color:#00A5CF;
 }
 
 </style>
-
 </head>
 
 <body style="background-color:black;">
+	
 <ul>
- <li><a  href="index.html"><img width="50%" src="images\logo.png"  alt=""></a></li>
-  <li><a href="TheCards.html">The Cards</a></li>  
-    <li><a href="astrology.html">Astrology</a></li>
-	  <li><a href="gallery.html">Photo Gallery</a></li>
-	    <li> </li>
-  <li ><a href="shop.html">Shop</a></li>
+	<a href="index.html"><img width="15%" src="images\logo.png"  alt=""></a>
+	<li ><a href="shop.html">Shop</a></li>
+	<li><a href="gallery.html">Photo Gallery</a></li>
+	<li><a href="astrology.html">Astrology</a></li>
+	<li><a class="active" href="TheCards.html">The Cards</a></li>  
 </ul>
 
 
- <h1>Learn the ancient wisdom of astrology while you <br>play any of your favorite card games with Sun Cards.</h1>
+
+
+<h1>Learn the ancient wisdom of astrology while you <br>play any of your favorite card games with Sun Cards.</h1>
 
 <div >
 <img   style="width:100%"  src="images/cardsImage1.jpg" />
